@@ -1,0 +1,73 @@
+[gd_scene load_steps=9 format=3 uid="uid://djvpgpx805dbn"]
+
+[ext_resource type="Script" path="res://Rotate.gd" id="1_hpso3"]
+[ext_resource type="Texture2D" uid="uid://dhw7kw20km64p" path="res://e891669c27c833ff0f2db2c083344117.png" id="2_wqc7y"]
+[ext_resource type="Texture2D" uid="uid://crbqq00ispqwg" path="res://earth-globe-clip-art-vector-illustration-isolated-free-png.webp" id="3_u8euu"]
+[ext_resource type="Texture2D" uid="uid://bmlabger2x6et" path="res://pngtree-the-surface-of-a-round-moon-png-image_5955908.png" id="4_0vjbc"]
+[ext_resource type="Texture2D" uid="uid://imyh7yswceq6" path="res://mars_planet_PNG23.png" id="5_e1823"]
+[ext_resource type="Texture2D" uid="uid://cssdfjwfbyjma" path="res://Saturnx.png" id="6_u3y16"]
+[ext_resource type="Texture2D" uid="uid://dco1q11owxwl3" path="res://Uranus-PNG.png" id="7_5ek6y"]
+[ext_resource type="Texture2D" uid="uid://byu2q01jvvaxt" path="res://Neptune_cutout.png" id="8_nsaie"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_hpso3")
+
+[node name="star" type="Sprite2D" parent="."]
+position = Vector2(558, 283)
+scale = Vector2(0.105187, 0.115188)
+texture = ExtResource("2_wqc7y")
+script = ExtResource("1_hpso3")
+rotation_speed = 0.01
+
+[node name="earth" type="Sprite2D" parent="."]
+position = Vector2(716, 375)
+scale = Vector2(0.0913265, 0.109694)
+texture = ExtResource("3_u8euu")
+script = ExtResource("1_hpso3")
+rotation_speed = 0.01
+
+[node name="earth\'s moon" type="Sprite2D" parent="earth"]
+position = Vector2(698.111, -498.027)
+scale = Vector2(0.32133, 0.300724)
+texture = ExtResource("4_0vjbc")
+script = ExtResource("1_hpso3")
+
+[node name="mars" type="Sprite2D" parent="."]
+position = Vector2(345, 456)
+scale = Vector2(0.179688, 0.173828)
+texture = ExtResource("5_e1823")
+script = ExtResource("1_hpso3")
+rotation_speed = 0.01
+
+[node name="mars\' moon 2" type="Sprite2D" parent="mars"]
+position = Vector2(-123.827, 342.292)
+scale = Vector2(0.122899, 0.110262)
+texture = ExtResource("4_0vjbc")
+script = ExtResource("1_hpso3")
+
+[node name="mars\' moon 1" type="Sprite2D" parent="mars"]
+position = Vector2(-283.826, 293.394)
+scale = Vector2(0.0973913, 0.0838952)
+texture = ExtResource("4_0vjbc")
+script = ExtResource("1_hpso3")
+
+[node name="Saturnx" type="Sprite2D" parent="."]
+position = Vector2(299, 171)
+scale = Vector2(0.186667, 0.253181)
+texture = ExtResource("6_u3y16")
+script = ExtResource("1_hpso3")
+rotation_speed = 0.01
+
+[node name="Uranus" type="Sprite2D" parent="."]
+position = Vector2(1007, 353)
+scale = Vector2(0.2375, 0.221667)
+texture = ExtResource("7_5ek6y")
+script = ExtResource("1_hpso3")
+rotation_speed = 0.01
+
+[node name="NeptuneCutout" type="Sprite2D" parent="."]
+position = Vector2(126, 321)
+scale = Vector2(0.141108, 0.160156)
+texture = ExtResource("8_nsaie")
+script = ExtResource("1_hpso3")
+rotation_speed = 0.01

@@ -1,0 +1,85 @@
+[gd_scene load_steps=10 format=3 uid="uid://qgu2vqgwm8qn"]
+
+[ext_resource type="Texture2D" uid="uid://bu0vrhs6l6dxb" path="res://cartoon_star_with_face_hd_by_jess12347_dennrjl-fullview.png" id="1_gil0e"]
+[ext_resource type="Script" path="res://Rotate.gd" id="2_5lgy0"]
+[ext_resource type="Texture2D" uid="uid://crbqq00ispqwg" path="res://earth-globe-clip-art-vector-illustration-isolated-free-png.webp" id="2_jf0ig"]
+[ext_resource type="Texture2D" uid="uid://dco1q11owxwl3" path="res://Uranus-PNG.png" id="3_c6gkq"]
+[ext_resource type="Texture2D" uid="uid://imyh7yswceq6" path="res://mars_planet_PNG23.png" id="4_uvrhv"]
+[ext_resource type="Texture2D" uid="uid://cssdfjwfbyjma" path="res://Saturnx.png" id="5_6wtuc"]
+[ext_resource type="Texture2D" uid="uid://byu2q01jvvaxt" path="res://Neptune_cutout.png" id="6_newx4"]
+[ext_resource type="Texture2D" uid="uid://bmlabger2x6et" path="res://pngtree-the-surface-of-a-round-moon-png-image_5955908.png" id="7_pbjfs"]
+[ext_resource type="Texture2D" uid="uid://ck2hetmdhb7xo" path="res://images.jpg" id="9_2010q"]
+
+[node name="Node2D" type="Node2D"]
+
+[node name="star" type="Sprite2D" parent="."]
+position = Vector2(521, 273.5)
+scale = Vector2(0.304688, 0.351042)
+texture = ExtResource("1_gil0e")
+script = ExtResource("2_5lgy0")
+rotation_speed = 0.01
+
+[node name="Neptune" type="Sprite2D" parent="star"]
+position = Vector2(-1130.6, 607.966)
+scale = Vector2(0.25406, 0.244468)
+texture = ExtResource("6_newx4")
+script = ExtResource("2_5lgy0")
+rotation_speed = 0.01
+
+[node name="Saturn" type="Sprite2D" parent="star"]
+position = Vector2(-904.389, -145.666)
+scale = Vector2(0.477683, 0.60385)
+texture = ExtResource("5_6wtuc")
+script = ExtResource("2_5lgy0")
+rotation_speed = 0.01
+
+[node name="uranus" type="Sprite2D" parent="star"]
+position = Vector2(1003.3, 187.883)
+scale = Vector2(0.501424, 0.573396)
+texture = ExtResource("3_c6gkq")
+script = ExtResource("2_5lgy0")
+rotation_speed = 0.01
+
+[node name="earth" type="Sprite2D" parent="star"]
+position = Vector2(467.691, 433.324)
+scale = Vector2(0.218617, 0.250451)
+texture = ExtResource("2_jf0ig")
+script = ExtResource("2_5lgy0")
+rotation_speed = 0.01
+
+[node name="earth moon" type="Sprite2D" parent="star/earth"]
+position = Vector2(886.171, 527.691)
+scale = Vector2(0.347519, 0.359472)
+texture = ExtResource("7_pbjfs")
+script = ExtResource("2_5lgy0")
+rotation_speed = 0.1
+
+[node name="mars" type="Sprite2D" parent="star"]
+position = Vector2(-605.813, 496.259)
+scale = Vector2(0.378385, 0.445574)
+texture = ExtResource("4_uvrhv")
+script = ExtResource("2_5lgy0")
+rotation_speed = 0.01
+
+[node name="mars moon 1" type="Sprite2D" parent="star/mars"]
+position = Vector2(210.823, 353.104)
+scale = Vector2(0.208313, 0.213824)
+texture = ExtResource("7_pbjfs")
+script = ExtResource("2_5lgy0")
+rotation_speed = 0.1
+
+[node name="mars moon 2" type="Sprite2D" parent="star/mars"]
+position = Vector2(-271.058, 334.272)
+scale = Vector2(0.218352, 0.207939)
+texture = ExtResource("7_pbjfs")
+script = ExtResource("2_5lgy0")
+rotation_speed = 0.1
+
+[node name="Node" type="Node" parent="."]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground"]
+position = Vector2(581, 332)
+scale = Vector2(5.11333, 2.90444)
+texture = ExtResource("9_2010q")
